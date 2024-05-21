@@ -15,4 +15,4 @@ app.use(express.static('public'));
 // Server listener
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
-  });
+});
