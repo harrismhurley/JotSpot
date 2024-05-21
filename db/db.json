@@ -1,6 +1,12 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "id": "1716300172282",
+    "title": "this is nuts",
+    "text": "these notes got crazy"
+  },
+  {
+    "id": "1716300596136",
+    "title": "new note",
+    "text": "this note is new\n"
+  }
 ]

@@ -13,12 +13,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Use routes in routes/index.js
-const indexRouter = require('./routes/index');
-app.use('/', indexRouter);
+const indexRoute = require('./routes/index');
+app.use('/', indexRoute);
 
 // Use routes in routes/notes.js
-const notesRouter = require('./routes/notes');
-app.use('/api/notes', notesRouter);
+const notesRoute = require('./routes/notes');
+app.use('/api/notes', notesRoute);
 
 // Server listener
 app.listen(PORT, () => {
