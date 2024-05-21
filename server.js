@@ -5,12 +5,20 @@ const fs = require('fs');
 const { v4: uuid } = require('uuid');
 const PORT = process.env.PORT || 3001;
 
-// Middleware to parse JSON and urlencoded data
+// Middleware for JSON and encoding
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serves static files from the public folder
+// Static file from public
 app.use(express.static('public'));
+
+// Use routes in routes/index.js
+const indexRouter = require('./routes/index');
+app.use('/', indexRouter);
+
+// Use routes in routes/notes.js
+const notesRouter = require('./routes/notes');
+app.use('/api/notes', notesRouter);
 
 // Server listener
 app.listen(PORT, () => {
