@@ -19,7 +19,6 @@ A simple and efficient note-taking application built with Express.js. It allows 
 * [How to Contribute](#how-to-contribute)
 * [Tests](#tests)
 * [License](#license)
-* [Screenshots](#screenshots)
 
 ## Installation
 
